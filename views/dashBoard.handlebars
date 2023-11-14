@@ -1,0 +1,15 @@
+<section>
+    <input type="text" placeholder="what is your Blog title">
+    <textarea class="form-control" placeholder="what is your Blog content"></textarea>
+    <button type="submit" class="btn btn-success">Submit</button>
+</section>
+<section>
+{{#each blog as |blog| }}
+ <h4><a href="/Blog/{{blog.id}}">{{blog.name}}</a></h4>
+ <button type="button" class="btn btn-warning" id="update">Update</button>
+ <button type="button" class="btn btn-danger" id="delete">Delete</button>
+ {{/each}}
+</section>
+
+<script src="./js/dashBoard"></script>
+ 

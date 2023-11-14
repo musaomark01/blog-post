@@ -1,0 +1,9 @@
+{{#each blog as |blog| }}
+<section>
+    <h2>{{blog.title}}</h2>
+    <p>{{blog.content}}</p>
+     <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+    {{#if blog.comment}}
+    <p>{{blog.comment}}</p>
+    {{/if}}
+</section>
